@@ -1,0 +1,41 @@
+/* = Reset
+------------------------------------------------------------------------------------ */
+body, div, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, blockquote, p, pre, code, form, button, input, textarea, table, th, td, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { margin: 0; padding: 0; }
+html { height: 100%; font-size: 20px; -webkit-text-size-adjust: 100%; -webkit-tap-highlight-color: rgba(0,0,0,0); }
+body { height: 100%; line-height: 1;  font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; overflow-x: hidden; }
+h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: 400; }
+ul, ol { list-style: none; }
+a { text-decoration: none; }
+button, input, select, textarea { border: none; font-family: inherit; font-size: 100%; outline: none; -webkit-appearance: none; }
+textarea { resize: none; }
+img { vertical-align: top; }
+em, i { font-style: normal; }
+
+/* = Container
+------------------------------------------------------------------------------------ */
+body{ background-color: #f5f7f9; color: #828282; }
+a{ color: #828282; }
+
+.contacts { position: relative; height: 100%; padding-top: 2rem; padding-bottom: 2rem; background-color: #fff; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+.contacts-hd { position: absolute; left: 0; top: 0; right: 0; height: 2rem; line-height: 2rem; box-shadow:inset 0 -1px 0 #00b0ff; background-color: #fff; font-size: .6rem; text-align: center; color: #00b0ff; }
+
+.contacts-bd { position: relative; width: 100%; height: 100%; background: #fff; overflow: hidden; }
+	.contacts-header{ position: absolute; left: 0; top: 0; width: 100%; height: 2rem; line-height: 2rem; background-color: #f3f3f3; font-size: .7rem; color: #000; font-weight: 700; text-transform: uppercase; text-indent: 1rem; z-index: 10; }
+	.contacts-header.isHidden{ visibility:hidden; }
+
+	.contacts-content { display: block; width: 100%; height: 100%; font-size: .6rem; overflow-y: auto; }
+
+	.contacts-group { position: relative; padding-top: 2rem; border-bottom: 1px solid #f3f3f3; }
+	.contacts-group:last-child { border-bottom: 0; }
+	.contacts-group-hd { position: absolute; left: 0; top: 0; width: 100%; line-height: 2rem; background-color: #f3f3f3; font-size: .7rem; color: #000; font-weight: 700; text-transform: uppercase; text-indent: 1rem; }
+	.contacts-group-bd a { display: block; line-height: 2rem; margin-left: 1rem; border-bottom: 1px solid #f3f3f3; color: #000; text-transform: capitalize; }
+	.contacts-group-bd a:last-child { border-bottom: 0; }
+	.contacts-group.isAnimated .contacts-group-hd { bottom: 0; top: auto; }
+
+.contacts-nav { display: -webkit-box; display: flex; box-orient: vertical; -webkit-box-orient: vertical; -webkit-box-direction: normal; flex-direction: column; box-pack: center; -webkit-box-pack: center; justify-content: center; position: absolute; right: 0; top: 0; width: 1rem; height: 100%; background: #fff; text-align: center; z-index: 20; }
+.contacts-nav li { font-size: .6rem; color: #00b0ff; text-transform: uppercase; cursor: pointer; }
+
+.contacts-ft { display: -webkit-box; display: flex; position: absolute; bottom: 0; width: 100%; height: 2rem; background-color: #fff; box-shadow:inset 0 1px 0 #e8ebed; text-align:center; z-index: 100; }
+.contacts-ft a { box-flex: 1; -webkit-box-flex: 1; flex: 1; line-height: 2rem; font-size: .6rem; border-right: 1px solid #e8ebed; color: #00b0ff; }
+.contacts-ft a:last-child{ border-right:0; }
